@@ -1,0 +1,47 @@
+﻿<p class="text-info">
+    Welcome to this fruit Store.<br />
+    You can find and buy the fruit you want just in a few steps.<br />
+    Just using the search bar to select the book you want and add them to your shopping cart.<br />
+    When you are done, click the shopping cart icon to review your order and check out.<br />
+    In addition, click the book title or image, you can browse the detail of the book.
+</p>
+
+<p>
+    <input ng-model="search.name" placeholder="Enter keywords to search..." class="form-control">
+</p>
+
+<div class="table-responsive">
+<table class="table table-hover table-bordered">
+    <tr class="well">
+        <td class="tdRight" colspan="4" >
+            <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+            </a>
+        </td>
+    </tr>
+    <tr ng-repeat="product in store.products | orderBy:'name' | filter:search" >
+        <td class="tdCenter FruitThumbnail"><a href="#/products/{{product.id}}" ><img ng-src="{{product.screenshot}}" alt="{{product.name}}" class="img-thumbnail img-responsive" /></a></td>
+        <td>
+            <a href="#/products/{{product.id}}"><b>{{product.name}}</b></a><br />
+            {{product.description}}
+        </td>
+        <td class="tdRight">
+            {{product.price | currency}}
+        </td>
+        <td class="tdCenter">
+            <a href="" ng-click="cart.addItem(product.id, product.name, product.price, 1)">
+                add to cart
+            </a>
+        </td>
+    </tr>
+    <tr class="well">
+        <td class="tdRight" colspan="4">
+            <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+            </a>
+        </td>
+    </tr>
+</table>
+</div>

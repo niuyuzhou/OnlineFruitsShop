@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="AngularStore" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Fruit with AngularJS</title>
+    <!-- css file -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- jQuery, Angular -->
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" ></script>
+    <script src="bower_components/angular/angular.min.js" type="text/javascript" ></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js" type="text/javascript" ></script>
+    <script src="bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+		
+    <!-- AngularStore app -->
+    <script src="js/services.js" type="text/javascript"></script>
+    <script src="js/directives.js" type="text/javascript"></script>
+    <script src="js/shoppingCart.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/controllers.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <h1 class="well" >
+                    <a href="index.html" >
+										   On-line Angular Fruit Store 
+                    </a>
+                </h1>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

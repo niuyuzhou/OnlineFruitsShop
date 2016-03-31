@@ -1,0 +1,28 @@
+﻿
+.table td.tdRight {
+  text-align: right;
+}
+.table td.tdCenter {
+  text-align: center;
+}
+.table-nonfluid {
+   width: auto;
+}
+
+.FruitThumbnail{
+	display: block;
+	width: 140px;
+}
+
+.margin-top-1 { margin-top: 1em; }
+.margin-left-05 { margin-left: 0.5em; }
+
+a{
+	text-decoration: none;
+}
+
+h1.well {
+    background: rgb(51, 132, 255);
+    background: rgb(128, 128, 128);
+    color: white;
+}

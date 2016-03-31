@@ -1,0 +1,48 @@
+[
+  {
+    "id":"fruit01",
+    "name": "orange",
+    "description": "The orange is one of the most recognizable fruits combining sweetness with juicy flesh. These oranges are no exception! Ideal at any time but try with pancakes as a late breakfast or as a dinner desert.",
+    "price": 22.90,
+    "screenshot": "img/orange-01.jpeg",
+    "produce":"Australia",
+    "availability":true,
+    "shine": 8,
+    "rarity": 7,
+    "color": "#CCC",
+    "faces": 14,
+    "images": [
+      "img/orange-01.jpeg",
+      "img/orange-02.jpeg",
+      "img/orange-03.jpeg"
+    ],
+    "reviews": [{
+      "stars":5,
+      "body":"Always enjoy grape",
+      "author":"123@example.com"
+      }]
+  },
+  {
+    "id":"fruit02",
+    "name": "grape",
+    "description": "Now is the perfect time for grapes. These sweet red grapes are very nutritious, high in vitamins and minerals, with a high glucose content that provides energy for the body",
+    "price": 22.90,
+    "screenshot": "img/grape-01.jpg",
+    "produce":"Australia",
+    "availability":true,
+    "shine": 8,
+    "rarity": 7,
+    "color": "#CCC",
+    "faces": 14,
+    "images": [
+      "img/grape-01.jpg",
+      "img/grape-02.jpg",
+      "img/grape-03.jpg"
+    ],
+    "reviews": [{
+      "stars":5,
+      "body":"Always enjoy grape",
+      "author":"123@example.com"
+      }]
+  }
+]
