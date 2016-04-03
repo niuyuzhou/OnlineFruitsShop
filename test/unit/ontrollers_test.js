@@ -8,7 +8,7 @@ describe('storeControllers', function() {
     _$controller_('storeController', {$scope: scope});
   }));
 
-  describe('shoppingCart', function() {
+  xdescribe('shoppingCart', function() {
     it('store.products', function() {
       expect(scope.store.products.length).toEqual(0);
     });

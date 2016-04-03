@@ -1,5 +1,23 @@
 A Shopping Cart Fruit Application Built with AngularJS.
+## Getting Started
+npm start
 
-![image](https://github.com/niuyuzhou/OnlineFruitsShop/blob/master/store.jpg)
-![image](https://github.com/niuyuzhou/OnlineFruitsShop/blob/master/product.jpg)
-![image](https://github.com/niuyuzhou/OnlineFruitsShop/blob/master/cart.jpg)
+## Testing
+### Running Unit Tests
+npm test
+npm run test-single-run
+
+
+## Directory Layout
+app/
+  css/                  --> default stylesheet
+  components/           --> all app specific modules
+	js/										--> logic
+	json/
+	partials/							--> the partial template
+	
+test/
+  unit/
+		ontrollers_test.js
+		services_test.js
+karma.conf.js         --> config file for running unit tests with Karma
